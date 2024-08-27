@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador de Mensajes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo-principal">Cifrador de Texto</h1>
+        <div class="caja-texto">
+            <textarea class="entrada-texto" id="textoEntrada" placeholder="Escriba su mensaje aquí..."></textarea>
+            <textarea class="salida-texto" id="textoSalida" readonly placeholder="Texto cifrado..."></textarea>
+        </div>
+        <div class="caja-botones">
+            <div class="botones-izquierda">
+                <button class='btn-cifrar' onclick="cifrarMensaje()">Cifrar</button>
+                <button class='btn-descifrar' onclick="descifrarMensaje()">Descifrar</button>
+            </div>
+            <button class="btn-copiar" onclick="copiarMensaje()">Copiar</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

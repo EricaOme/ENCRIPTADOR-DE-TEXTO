@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 650px;
+}
+
+.caja-texto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 48%;
+    height: 120px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.caja-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.botones-izquierda {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button {
+    padding: 12px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a0dad;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8000ff;
+}
+
+button.btn-copiar {
+    margin-left: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Media Query para tabletas y teléfonos */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .caja-texto {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    textarea {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .caja-botones {
+        flex-direction: column;
+    }
+
+    .botones-izquierda, .btn-copiar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-copiar {
+        margin-top: 12px;
+    }
+}
+
+.entrada-texto,
+.salida-texto {
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.titulo-principal {
+    font-size: 38px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.btn-cifrar,
+.btn-descifrar {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
